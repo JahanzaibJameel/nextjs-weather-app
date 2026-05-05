@@ -1,0 +1,158 @@
+NOTICES
+
+This file contains notices for third-party software components used in the Weather App.
+
+===============================================================================
+
+React and Related Libraries
+-----------------------------
+React
+Copyright (c) Facebook, Inc. and its affiliates.
+All rights reserved.
+
+React is licensed under the MIT License:
+https://github.com/facebook/react/blob/main/LICENSE
+
+React Query
+Copyright (c) Tanner Linsley
+Licensed under the MIT License:
+https://github.com/TanStack/query/blob/main/LICENSE
+
+Next.js
+Copyright (c) Vercel, Inc.
+Licensed under the MIT License:
+https://github.com/vercel/next.js/blob/canary/license.md
+
+TypeScript
+Copyright (c) Microsoft Corporation
+Licensed under the Apache License 2.0:
+https://github.com/microsoft/TypeScript/blob/main/LICENSE.md
+
+===============================================================================
+
+Weather API Integration
+-----------------------
+
+OpenWeatherMap API
+Used for weather data retrieval.
+Terms of Service: https://openweathermap.org/terms
+Privacy Policy: https://openweathermap.org/privacy
+
+===============================================================================
+
+Error Tracking and Monitoring
+------------------------------
+
+Sentry
+Copyright (c) Functional Software, Inc. and affiliates
+Licensed under the BSD 3-Clause License:
+https://github.com/getsentry/sentry-javascript/blob/master/LICENSE
+
+===============================================================================
+
+Development and Build Tools
+---------------------------
+
+ESLint
+Copyright (c) OpenJS Foundation and other contributors
+Licensed under the MIT License:
+https://github.com/eslint/eslint/blob/main/LICENSE
+
+Prettier
+Copyright (c) James Long
+Licensed under the MIT License:
+https://github.com/prettier/prettier/blob/main/LICENSE
+
+Jest
+Copyright (c) Facebook, Inc. and its affiliates
+Licensed under the MIT License:
+https://github.com/facebook/jest/blob/main/LICENSE
+
+Playwright
+Copyright (c) Microsoft Corporation
+Licensed under the Apache License 2.0:
+https://github.com/microsoft/playwright/blob/main/LICENSE
+
+===============================================================================
+
+UI Components and Styling
+--------------------------
+
+React Icons
+Copyright (c) React Icons LLC
+Licensed under the MIT License:
+https://github.com/react-icons/react-icons/blob/main/LICENSE
+
+React Hot Toast
+Copyright (c) Timo Lins
+Licensed under the MIT License:
+https://github.com/timolins/react-hot-toast/blob/main/LICENSE
+
+Tailwind CSS
+Copyright (c) Tailwind Labs, Inc.
+Licensed under the MIT License:
+https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE
+
+===============================================================================
+
+Validation and Data Handling
+---------------------------
+
+Zod
+Copyright (c) Colin McDonnell
+Licensed under the MIT License:
+https://github.com/colinhacks/zod/blob/main/LICENSE
+
+Envalid
+Copyright (c) Lorenz Rasch
+Licensed under the MIT License:
+https://github.com/lorensrash/envalid/blob/main/LICENSE
+
+Pino
+Copyright (c) Matteo Collina and Pino contributors
+Licensed under the MIT License:
+https://github.com/pinojs/pino/blob/main/LICENSE
+
+===============================================================================
+
+Progressive Web App (PWA)
+------------------------------
+
+next-pwa
+Copyright (c) DuCanes
+Licensed under the MIT License:
+https://github.com/DuCanes/next-pwa/blob/main/LICENSE
+
+===============================================================================
+
+Testing and Mocking
+--------------------
+
+MSW (Mock Service Worker)
+Copyright (c) Artem Zakharchuk
+Licensed under the MIT License:
+https://github.com/mswjs/msw/blob/main/LICENSE
+
+===============================================================================
+
+Bundle Analysis
+--------------
+
+@next/bundle-analyzer
+Copyright (c) Next.js Team
+Licensed under the MIT License:
+https://github.com/vercel/next.js/blob/canary/packages/next-bundle-analyzer/LICENSE
+
+===============================================================================
+
+Source Code
+-----------
+
+The Weather App source code is proprietary and confidential.
+All rights reserved.
+
+For questions about these notices, please contact:
+Weather App Team
+privacy@weatherapp.com
+
+===============================================================================

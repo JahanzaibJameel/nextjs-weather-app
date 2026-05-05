@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /api/
+Allow: /
+
+# Block access to environment files and sensitive directories
+Disallow: /.env*
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /coverage/
+
+# Allow search engines to index the main app
+Crawl-delay: 1
