@@ -7,26 +7,39 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapping: {
-    // Handle module aliases (this will be automatically configured for you based on your tsconfig.json paths)
     '^@/(.*)$': '<rootDir>/src/$1',
   },
-  testEnvironment: 'jest-environment-jsdom',
-  collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}',
-    '!src/**/*.d.ts',
-    '!src/pages/_app.tsx',
-    '!src/pages/_document.tsx',
+  testMatch: [
+    '<rootDir>/**/__tests__/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/**/*.(test|spec).{js,jsx,ts,tsx}',
   ],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/**/*.d.ts',
+  ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html'],
   coverageThreshold: {
     global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80,
+      branches: 85,
+      functions: 85,
+      lines: 85,
+      statements: 85,
     },
   },
+  transform: {
+    '^.+\\.(js|jsx)$': 'babel-jest',
+  },
+  transformIgnorePatterns: [
+    '/node_modules/',
+    '/.next/',
+  ],
+  testTimeout: 10000,
+  verbose: true,
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
