@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { z } from 'zod';
 
-// Rate limiting in-memory store (for production, use Redis)
-const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
+// Rate limiting store with enhanced monitoring
+const rateLimitStore = new Map<string, { count: number; resetTime: number; lastAccess: number }>();
 
 // Validation schema
 const querySchema = z.object({
