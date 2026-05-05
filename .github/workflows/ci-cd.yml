@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '24'
   CACHE_VERSION: v1
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
         run: npm run type-check
 
       - name: Run unit tests
-        run: npm run test:coverage
+        run: npm run test
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
