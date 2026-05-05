@@ -62,7 +62,7 @@ function rateLimit(ip: string): boolean {
   const record = rateLimitStore.get(ip);
   
   if (!record || now > record.resetTime) {
-    rateLimitStore.set(ip, { count: 1, resetTime: now + windowMs });
+    rateLimitStore.set(ip, { count: 1, resetTime: now + windowMs, lastAccess: now });
     return true;
   }
   

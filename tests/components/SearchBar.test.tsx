@@ -24,8 +24,10 @@ describe('SearchBar', () => {
     const input = document.querySelector('input[placeholder*="city"]');
     const button = document.querySelector('button');
     
-    await user.type(input, 'London');
-    await user.click(button);
+    if (input && button) {
+      await user.type(input, 'London');
+      await user.click(button);
+    }
     
     expect(mockOnSearch).toHaveBeenCalledWith('London');
     expect(input).toHaveValue('');
@@ -37,7 +39,9 @@ describe('SearchBar', () => {
     
     const input = document.querySelector('input[placeholder*="city"]');
     
-    await user.type(input, 'Paris{enter}');
+    if (input) {
+      await user.type(input, 'Paris{enter}');
+    }
     
     expect(mockOnSearch).toHaveBeenCalledWith('Paris');
     expect(input).toHaveValue('');
@@ -48,7 +52,9 @@ describe('SearchBar', () => {
     render(<SearchBar onSearch={mockOnSearch} />);
     
     const button = document.querySelector('button');
-    await user.click(button);
+    if (button) {
+      await user.click(button);
+    }
     
     expect(mockOnSearch).not.toHaveBeenCalled();
   });
