@@ -58,12 +58,15 @@ A production-ready, enterprise-grade weather application built with Next.js, Typ
 
 3. **Environment Setup**
    ```bash
-   cp .env.example .env.local
+   cp .env.example .env
    ```
    
-   Add your OpenWeatherMap API key to `.env.local`:
+   Add your OpenWeatherMap API key to `.env`:
    ```
    WEATHER_API_KEY=your_openweathermap_api_key_here
+   NODE_OPTIONS=--openssl-legacy-provider
+   RATE_LIMIT_MAX_REQUESTS=100
+   RATE_LIMIT_WINDOW_MS=900000
    ```
    
    Get your free API key from [OpenWeatherMap](https://openweathermap.org/api).
